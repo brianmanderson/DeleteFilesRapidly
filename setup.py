@@ -13,7 +13,7 @@ setup(
     name='DeleteFilesRapidly',
     author='Brian Mark Anderson',
     author_email='b5anderson@health.ucsd.edu',
-    version='0.0.1',
+    version='0.0.2',
     description='Tool for quickly deleting files on a remote server via threading',
     long_description=long_description,
     long_description_content_type="text/markdown",

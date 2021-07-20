@@ -16,7 +16,7 @@ def worker_def(A):
             q.task_done()
 
 
-def delete_files(path):
+def delete_files_in_path(path):
     thread_count = int(cpu_count()*0.8)
     q = Queue(maxsize=thread_count)
     A = (q,)
