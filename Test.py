@@ -1,3 +1,3 @@
-from DeleteFilesRapidly.DeleteFilesWithThreading import delete_everything_down_path
+from DeleteFilesRapidly.DeleteFilesWithThreading import DeleteEverythingDownPath
 
-delete_everything_down_path(r'K:\LCTS_Lung\Nifti_Files\Test')
+DeleteEverythingDownPath(r'K:\LCTS_Lung\Nifti_Files\Test')

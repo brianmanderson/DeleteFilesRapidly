@@ -34,7 +34,7 @@ class DeleteEverythingDownPath(object):
                 self.q.put(os.path.join(root, file))
             for directory in directories:
                 self.delete_everything_down_path(os.path.join(root, directory))
-                os.removedirs(os.path.join(root, directory))
+                os.rmdir(os.path.join(root, directory))
 
 
 if __name__ == '__main__':
