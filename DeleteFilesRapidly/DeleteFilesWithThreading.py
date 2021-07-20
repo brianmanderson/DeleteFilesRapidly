@@ -34,5 +34,15 @@ def delete_files_in_path(path):
     return None
 
 
+def delete_everything_down_path(path):
+    for root, directories, files in os.walk(path):
+        if files:
+            delete_files_in_path(root)
+        for directory in directories:
+            delete_everything_down_path(os.path.join(root, directory))
+            os.removedirs(os.path.join(root, directory))
+    return None
+
+
 if __name__ == '__main__':
     pass
