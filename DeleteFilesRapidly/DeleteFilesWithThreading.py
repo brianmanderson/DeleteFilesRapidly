@@ -27,6 +27,10 @@ class DeleteEverythingDownPath(object):
             t.start()
             threads.append(t)
         self.delete_everything_down_path(path=path)
+        for i in range(thread_count):
+            self.q.put(None)
+        for t in threads:
+            t.join()
 
     def delete_everything_down_path(self, path):
         for root, directories, files in os.walk(path):
